@@ -4,6 +4,7 @@
 rm /opt/lool/systemplate/etc/resolv.conf
 ln -s /etc/resolv.conf /opt/lool/systemplate/etc/resolv.conf
 
+if test "${DONT_GEN_SSL_CERT-set}" == set; then
 # Generate new SSL certificate instead of using the default
 mkdir -p /opt/ssl/
 cd /opt/ssl/
@@ -18,6 +19,7 @@ openssl x509 -req -in certs/tmp/localhost.csr.pem -CA certs/ca/root.crt.pem -CAk
 mv certs/servers/localhost/privkey.pem /etc/loolwsd/key.pem
 mv certs/servers/localhost/cert.pem /etc/loolwsd/cert.pem
 mv certs/ca/root.crt.pem /etc/loolwsd/ca-chain.cert.pem
+fi
 
 # Replace trusted host and set admin username and password
 perl -pi -e "s/localhost<\/host>/${domain}<\/host>/g" /etc/loolwsd/loolwsd.xml
