@@ -9,6 +9,9 @@ apt-get -y install apt-transport-https
 # Install locales
 apt-get -y install locales-all
 
+# Install hyphenation patterns
+apt-get -y install hyphen-*
+
 # Add Collabora repos
 echo "deb https://collaboraoffice.com/repos/CollaboraOnline/CODE /" >> /etc/apt/sources.list.d/collabora.list
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6CCEA47B2281732DF5D504D00C54D189F4BA284D
