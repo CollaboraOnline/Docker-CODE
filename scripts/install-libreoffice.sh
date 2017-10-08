@@ -9,8 +9,8 @@ apt-get -y install apt-transport-https
 # Install locales
 apt-get -y install locales-all
 
-# Install hyphenation patterns
-apt-get -y install hyphen-*
+# Install hyphenation patterns and spelling dictionaries
+apt-get -y install hyphen-* hunspell-hu hunspell-en-us hunspell-de-de-frami hunspell-nl hunspell-it
 
 # Add Collabora repos
 echo "deb https://collaboraoffice.com/repos/CollaboraOnline/CODE /" >> /etc/apt/sources.list.d/collabora.list
