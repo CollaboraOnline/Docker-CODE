@@ -42,3 +42,6 @@ cp /opt/collaboraoffice5.3/share/extensions/dict-de/de_CH_frami.aff /usr/share/h
 cp /opt/collaboraoffice5.3/share/extensions/dict-de/de_DE_frami.dic /usr/share/hunspell/de_DE.dic
 cp /opt/collaboraoffice5.3/share/extensions/dict-de/de_DE_frami.aff /usr/share/hunspell/de_DE.aff
 apt-get -y remove --purge collaboraoffice5.3-dict*
+
+# Cleanup
+rm -rf /var/lib/apt/lists/*
