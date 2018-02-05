@@ -35,6 +35,20 @@ cp /opt/collaboraoffice5.3/share/extensions/dict-es/es_ANY.dic /usr/share/hunspe
 cp /opt/collaboraoffice5.3/share/extensions/dict-es/es_ANY.aff /usr/share/hunspell/es_ES.aff
 cp /opt/collaboraoffice5.3/share/extensions/dict-de/de_DE_frami.dic /usr/share/hunspell/de_DE.dic
 cp /opt/collaboraoffice5.3/share/extensions/dict-de/de_DE_frami.aff /usr/share/hunspell/de_DE.aff
+cp /opt/collaboraoffice5.3/share/extensions/dict-pt-PT/th_pt_PT_v2.dat /usr/share/mythes
+cp /opt/collaboraoffice5.3/share/extensions/dict-es/th_es_ANY_v2.dat /usr/share/mythes/th_es_ES_v2.dat
+cp /opt/collaboraoffice5.3/share/extensions/dict-fr/thes_fr.dat /usr/share/mythes/th_fr_FR_v2.dat
+cp /opt/collaboraoffice5.3/share/extensions/dict-ru/th_ru_RU_v2.dat /usr/share/mythes
+cp /opt/collaboraoffice5.3/share/extensions/dict-it/th_it_IT_v2.dat /usr/share/mythes
+cp /opt/collaboraoffice5.3/share/extensions/dict-en/th_en_US_v2.dat /usr/share/mythes
+cp /opt/collaboraoffice5.3/share/extensions/dict-de/th_de_DE_v2.dat /usr/share/mythes
+cp /opt/collaboraoffice5.3/share/extensions/dict-pt-PT/th_pt_PT_v2.idx /usr/share/mythes
+cp /opt/collaboraoffice5.3/share/extensions/dict-es/th_es_ANY_v2.idx /usr/share/mythes/th_es_ES_v2.idx
+cp /opt/collaboraoffice5.3/share/extensions/dict-fr/thes_fr.idx /usr/share/mythes/th_fr_FR_v2.idx
+cp /opt/collaboraoffice5.3/share/extensions/dict-ru/th_ru_RU_v2.idx /usr/share/mythes
+cp /opt/collaboraoffice5.3/share/extensions/dict-it/th_it_IT_v2.idx /usr/share/mythes
+cp /opt/collaboraoffice5.3/share/extensions/dict-en/th_en_US_v2.idx /usr/share/mythes
+cp /opt/collaboraoffice5.3/share/extensions/dict-de/th_de_DE_v2.idx /usr/share/mythes
 apt-get -y remove --purge collaboraoffice5.3-dict*
 
 # Cleanup
