@@ -20,6 +20,7 @@ apt-get -y install loolwsd code-brand collaboraoffice5.3-dict* collaboraofficeba
 # Copy dictionaries to paths where LOK recognizes them
 mkdir -p /usr/share/hunspell
 mkdir -p /usr/share/hyphen
+mkdir -p /usr/share/mythes
 mkdir -p /opt/lool/systemplate/usr/share/hyphen
 for i in `find /opt/collaboraoffice5.3/share/extensions/ -name hyph*.dic`;do cp $i /opt/lool/systemplate/usr/share/hyphen;done
 for i in `find /opt/collaboraoffice5.3/share/extensions/ -name hyph*.dic`;do cp $i /usr/share/hyphen;done
