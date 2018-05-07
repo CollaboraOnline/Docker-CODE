@@ -213,7 +213,7 @@ cp /opt/collaboraoffice5.3/share/extensions/dict-uk/th_uk_UA.idx /usr/share/myth
 cp /opt/collaboraoffice5.3/share/extensions/dict-vi/vi_VN.aff /usr/share/hunspell/vi_VN.aff
 cp /opt/collaboraoffice5.3/share/extensions/dict-vi/vi_VN.dic /usr/share/hunspell/vi_VN.dic
 
-apt-get -y remove --purge collaboraoffice5.3-dict*
+apt-get -y remove --purge collaboraoffice5.3-dict* 
 
 # Cleanup
 rm -rf /var/lib/apt/lists/*
