@@ -1,8 +1,7 @@
 #!/bin/sh
 
-# Fix lool resolv.conf problem (wizdude)
-rm /opt/lool/systemplate/etc/resolv.conf
-ln -s /etc/resolv.conf /opt/lool/systemplate/etc/resolv.conf
+# Fix domain name resolution from jails
+cp /etc/resolv.conf /etc/hosts /opt/lool/systemplate/etc/
 
 if test "${DONT_GEN_SSL_CERT-set}" == set; then
 # Generate new SSL certificate instead of using the default
