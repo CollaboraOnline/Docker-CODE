@@ -17,5 +17,8 @@ apt-get update
 # Install the Collabora packages
 apt-get -y install loolwsd code-brand collaboraoffice5.3-dict* collaboraofficebasis5.3*
 
+# Install inotifywait and killall to automatic restart loolwsd, if loolwsd.xml changes
+apt-get -y install inotify-tools psmisc
+
 # Cleanup
 rm -rf /var/lib/apt/lists/*
