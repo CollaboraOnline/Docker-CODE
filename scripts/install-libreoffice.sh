@@ -15,7 +15,7 @@ apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6CCEA47B2281732DF5D504D
 apt-get update
 
 # Install the Collabora packages
-apt-get -y install loolwsd code-brand collaboraoffice5.3-dict* collaboraofficebasis5.3*
+apt-get -y install loolwsd code-brand collaboraoffice6.0-dict* collaboraofficebasis6.0*
 
 # Install inotifywait and killall to automatic restart loolwsd, if loolwsd.xml changes
 apt-get -y install inotify-tools psmisc
