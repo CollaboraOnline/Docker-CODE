@@ -1,0 +1,4 @@
+W: Size of file /var/lib/apt/lists/partial/collaboraoffice.com_repos-staging_CollaboraOnline_CODE-debian8_InRelease is not what the server reported 1728 378
+W: Size of file /var/lib/apt/lists/partial/collaboraoffice.com_repos-staging_CollaboraOnline_CODE-debian8_Packages.bz2 is not what the server reported 17967 16384
+E: The package index files are corrupted. No Filename: field for package collaboraofficebasis6.0-gl.
+
