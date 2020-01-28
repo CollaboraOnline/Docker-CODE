@@ -1,7 +1,7 @@
 #!/bin/sh
 
-# Update installed packages
-apt-get update && apt-get -y upgrade
+# Refresh repos otherwise installations later may fail
+apt-get update
 
 # Install HTTPS transport
 apt-get -y install apt-transport-https
@@ -13,7 +13,7 @@ apt-get -y install locales-all
 apt-get -y install fonts-open-sans
 
 # Add Collabora repos
-echo "deb https://collaboraoffice.com/repos/CollaboraOnline/CODE /" > /etc/apt/sources.list.d/collabora.list
+echo "deb https://collaboraoffice.com/repos/CollaboraOnline/CODE-ubuntu1804 /" > /etc/apt/sources.list.d/collabora.list
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 6CCEA47B2281732DF5D504D00C54D189F4BA284D
 apt-get update
 
