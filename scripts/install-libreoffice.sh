@@ -12,6 +12,12 @@ apt-get -y install locales-all
 # Install some more fonts
 apt-get -y install fonts-open-sans
 
+# Install gnupg2
+apt-get -y install gnupg2
+
+# install ca-certificates
+apt-get -y install ca-certificates
+
 # Add Collabora repos
 echo "deb https://collaboraoffice.com/repos/CollaboraOnline/CODE-ubuntu1804 /" > /etc/apt/sources.list.d/collabora.list
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 6CCEA47B2281732DF5D504D00C54D189F4BA284D
