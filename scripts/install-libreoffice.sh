@@ -35,4 +35,3 @@ rm -rf /var/lib/apt/lists/*
 # Fix permissions
 chown -R lool:lool /opt/
 chown -R lool:lool /etc/loolwsd
-
