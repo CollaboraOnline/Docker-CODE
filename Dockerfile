@@ -11,5 +11,8 @@ RUN bash install-libreoffice.sh
 
 EXPOSE 9980
 
+# switch to lool user
+USER 101
+
 # Entry point
 CMD bash start-libreoffice.sh
