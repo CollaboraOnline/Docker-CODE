@@ -25,6 +25,11 @@ mv certs/servers/localhost/cert.pem /etc/loolwsd/cert.pem
 mv certs/ca/root.crt.pem /etc/loolwsd/ca-chain.cert.pem
 fi
 
+# Disable warning/info messages of LOKit by default
+if test "${SAL_LOG-set}" == set; then
+SAL_LOG="-INFO-WARN"
+fi
+
 # Replace trusted host and set admin username and password
 perl -pi -e "s/localhost<\/host>/${domain}<\/host>/g" /etc/loolwsd/loolwsd.xml
 perl -pi -e "s/<username (.*)>.*<\/username>/<username \1>${username}<\/username>/" /etc/loolwsd/loolwsd.xml
