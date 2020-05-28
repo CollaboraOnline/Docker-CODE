@@ -6,9 +6,6 @@ apt-get update
 # Install HTTPS transport
 apt-get -y install apt-transport-https
 
-# Install locales
-apt-get -y install locales-all
-
 # Install some more fonts
 apt-get -y install fonts-open-sans
 
