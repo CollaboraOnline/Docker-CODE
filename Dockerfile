@@ -4,10 +4,10 @@ FROM ubuntu:18.04
 ENV domain localhost
 ENV LC_CTYPE C.UTF-8
 
-# Setup scripts for LibreOffice Online
-ADD /scripts/install-libreoffice.sh /
-ADD /scripts/start-libreoffice.sh /
-RUN bash install-libreoffice.sh
+# Setup scripts for Collabora Online
+ADD /scripts/install-collabora-online.sh /
+ADD /scripts/start-collabora-online.sh /
+RUN bash install-collabora-online.sh
 
 EXPOSE 9980
 
@@ -15,4 +15,4 @@ EXPOSE 9980
 USER 101
 
 # Entry point
-CMD bash start-libreoffice.sh
+CMD bash start-collabora-online.sh
